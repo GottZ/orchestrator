@@ -15,7 +15,7 @@ A 3-agent system for Claude Code that plans, orchestrates, and executes projects
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        /plan [description]                       │
+│                      /planner [description]                      │
 │                               │                                  │
 │                               ▼                                  │
 │  ┌─────────────────────────────────────────────────────────────┐│
@@ -58,7 +58,7 @@ A 3-agent system for Claude Code that plans, orchestrates, and executes projects
 ./install.sh
 
 # 2. Plan a new project
-/plan "Add caching layer to the API"
+/planner "Add caching layer to the API"
 
 # 3. Execute the plan
 /orchestrate /path/to/project
@@ -92,7 +92,7 @@ your-project/
 
 | Command | Purpose |
 |---------|---------|
-| `/plan [description]` | Start planning with questions + research |
+| `/planner [description]` | Start planning with questions + research |
 | `/orchestrate [path]` | Execute with checkpointing |
 | `/task [path]` | Run single task manually |
 

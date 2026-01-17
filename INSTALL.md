@@ -31,7 +31,7 @@ ln -sf ~/dev/orchestrator/agents/project-orchestrator.md ~/.claude/agents/
 ln -sf ~/dev/orchestrator/agents/project-runner.md ~/.claude/agents/
 
 # Symlink commands
-ln -sf ~/dev/orchestrator/commands/plan.md ~/.claude/commands/
+ln -sf ~/dev/orchestrator/commands/planner.md ~/.claude/commands/
 ln -sf ~/dev/orchestrator/commands/orchestrate.md ~/.claude/commands/
 ln -sf ~/dev/orchestrator/commands/task.md ~/.claude/commands/
 ```
@@ -56,11 +56,11 @@ cp ~/dev/orchestrator/commands/*.md ~/.claude/commands/
 Start a new Claude Code session and check:
 
 ```bash
-# Should show plan, orchestrate, task in available commands
+# Should show planner, orchestrate, task in available commands
 /help
 
 # Test the planner
-/plan "Test project"
+/planner "Test project"
 ```
 
 ## Uninstall
@@ -68,7 +68,7 @@ Start a new Claude Code session and check:
 ```bash
 # Remove symlinks or files
 rm ~/.claude/agents/project-*.md
-rm ~/.claude/commands/{plan,orchestrate,task}.md
+rm ~/.claude/commands/{planner,orchestrate,task}.md
 ```
 
 ## Updating
